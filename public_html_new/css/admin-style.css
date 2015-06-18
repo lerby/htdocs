@@ -1,0 +1,14 @@
+
+/* Importing Twitter Bootstrap */
+@import "//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css";
+
+/* Displays better */
+body {
+    padding:10px 40px 40px 40px;
+    background-color:#eee
+}
+
+/* Invalid input text */
+.error {
+    color:red
+}

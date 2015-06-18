@@ -1,0 +1,200 @@
+div#block {width:600px; margin:0 auto; background-color:#dddddd}
+div.header {width:600px; height:100px; background-color:#717dc9}
+div.left_col {width:148px; height:350px; float:left; border-right:2px dashed #717dc9}
+div.right_col {width:450px; float:left}
+div.footer {width:600px; height:70px; background-color:#717dc9; clear:both}
+
+
+#box {
+    background-color: #f5f5f5;
+    border: 1px dotted #000000;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+#cart_box {
+    background-color: #f5f5f5;
+    border: 1px dotted #000000;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* PRODUCT ITEM STYLE START */
+.featured {
+    font-family: "Open Sans", Arial, sans-serif;
+    background: #bada55;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.featured img {
+    max-width: 100%;
+    width: auto; height: auto;
+}
+
+.featured h3 {padding: 10px 10px 0;}
+.featured p {padding: 0 10px 10px;}
+
+/* grid from webdesignerwall.com */
+
+/************************************************************************************
+COLUMN
+*************************************************************************************/
+.col {
+    float: left;
+    margin-left: 3.2%;
+    margin-bottom: 1em;
+}
+.fullwidth .col {
+    float: none;
+    margin-left: 0;
+}
+/* grid4 col */
+.grid4 .col {
+    width: 22.6%;
+}
+/* grid3 col */
+.grid3 .col {
+    width: 31.2%;
+}
+/* grid2 col */
+.grid2 .col {
+    width: 48.4%;
+}
+/* clear col */
+.grid4 .col:nth-of-type(4n+1),
+.grid3 .col:nth-of-type(3n+1),
+.grid2 .col:nth-of-type(2n+1) {
+    margin-left: 0;
+    clear: left;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* reset cols to 3-column */
+@media screen and (max-width: 740px) {
+    /* grid4 */
+    .grid4 .col {
+        width: 31.2%;
+    }
+    .grid4 .col:nth-of-type(4n+1) {
+        margin-left: 3.2%;
+        clear: none;
+    }
+    .grid4 .col:nth-of-type(3n+1) {
+        margin-left: 0;
+        clear: left;
+    }
+}
+
+/* reset cols to 2-column */
+@media screen and (max-width: 600px) {
+    /* grid4 */
+    .grid4 .col {
+        width: 48.4%;
+    }
+    .grid4 .col:nth-of-type(3n+1) {
+        margin-left: 3.2%;
+        clear: none;
+    }
+    .grid4 .col:nth-of-type(2n+1) {
+        margin-left: 0;
+        clear: left;
+    }
+
+    /* grid3 */
+    .grid3 .col {
+        width: 48.4%;
+    }
+    .grid3 .col:nth-of-type(3n+1) {
+        margin-left: 3.2%;
+        clear: none;
+    }
+    .grid3 .col:nth-of-type(2n+1) {
+        margin-left: 0;
+        clear: left;
+    }
+}
+
+/* reset cols to fullwidth */
+@media screen and (max-width: 400px) {
+    /* grid4 */
+    .col {
+        width: 100% !important;
+        margin-left: 0 !important;
+        clear: none !important;
+    }
+}
+
+/* PRODUCT ITEM STYLE END */
+
+
+
+
+
+
+
+
+/* LOGIN  START*/
+#login_form {
+    margin:8px;
+}
+#login_box {
+    background-color: #f5f5f5;
+    border: 1px dotted #000000;
+    overflow: auto;
+    margin-top: 10px;
+}
+#overlay{
+    position:absolute;
+    display:none;
+    background:#000;
+    opacity:.8;
+    filter:alpha(opacity=80);
+    left:0;
+    top:0;
+}
+label {
+    display:block;
+    padding:0 6px;
+}
+input {
+    float:left;
+}
+form br {
+    clear:both;
+}
+#submit {
+    margin: 6px;
+}
+#close_btn {
+    display:block;
+    height:26px;
+}
+#login_result {
+    display:block;
+    margin:10px;
+    text-align: left;
+    text-indent: 5px;
+    height:22px;
+    line-height:22px;
+}
+.error {
+    background:#f9caca;
+    border: 1px solid #f00;
+}
+.success {
+    background:#caf9ca;
+    border: 1px solid #0f0;
+}
+.process {
+    background:#cacaf9;
+    border: 1px solid #00f;
+}
+/* LOGIN  END*/
